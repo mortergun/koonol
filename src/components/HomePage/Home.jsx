@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <article className="home">
       <div className="home__content__img">
-        <img className="home__img" src="./public/home_img.png" alt="Home img" />
+        <img className="home__img" src="./public/home.png" alt="Home img" />
       </div>
       <div className="home__content">
         <h2 className="home__title">Creador de páginas web de Koonol</h2>

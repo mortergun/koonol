@@ -39,7 +39,11 @@
 }
 
 .home__description__2{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "buton a a"
+                       "text a a";
   flex-direction: column;
 }
 
@@ -49,11 +53,13 @@
   border-radius: 15%;
   background-color: black;
   color: white;
+  grid-area: buton;
 }
 
 .home__span {
   font-size: 0.65rem;
   font-weight: 500;
+  grid-area: text;
 }
 
 .dinamic-text {
