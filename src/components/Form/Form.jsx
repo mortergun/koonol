@@ -16,7 +16,7 @@ const RegisterPage = () => {
 
   return (
     <div className="register-box">
-      <h2>Register</h2>
+      <h2>Registrate</h2>
       <form onSubmit={handleSubmit(submit)}>
         <div className="register-user-box">
           <input {...register("firstName")} type="text" id="firstname" />
