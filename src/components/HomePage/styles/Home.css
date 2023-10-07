@@ -1,0 +1,180 @@
+.home {
+  width: 95%;
+  height: 100%;
+  height: auto;
+  margin: 2rem auto;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+
+  grid-template-areas: "img text"
+                       "img text1"
+                       "resenas resenas"
+                       "footer footer"
+}
+
+.home__content__img {
+  width: 100%;
+  height: 150px;
+  grid-area: img;
+  object-fit: cover;
+}
+
+.home__content {
+  grid-area: text;
+}
+
+.home__title {
+  font-size: var(--h3);
+}
+
+.home__text {
+  grid-area: text1;
+}
+
+.home__description {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.home__description__2{
+  display: flex;
+  flex-direction: column;
+}
+
+.home__btn {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 15%;
+  background-color: black;
+  color: white;
+}
+
+.home__span {
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+
+.dinamic-text {
+  font-size: 2rem;
+}
+.typed-cursor {
+  font-size: 2rem;
+}
+
+.resenas {
+  grid-area: resenas;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.footer {
+  height: 100%;
+  grid-area: footer;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.footer__p {
+  padding-left: 2px;
+  padding-right: 5px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-left-color: #777;
+  border-right-color: #777;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.footer__btn {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 15%;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 1440px) {
+  .home__description {
+    font-size: 1.5rem;
+  }
+  .resenas {
+    padding: 5rem 15rem;
+    font-size: 1.5rem;
+  }
+  .footer__ul {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .home__description {
+    font-size: 2rem;
+  }
+  .resenas {
+    font-size: 1.7rem;
+    padding: 10rem 14rem;
+  }
+  .home__btn {
+    max-width: 250px;
+    height: 3.5rem;
+    border-radius: 15%;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .home__span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .footer {
+    padding: 6rem 8rem;
+  }
+  .footer__ul {
+    font-size: 1.4rem;
+  }
+  .footer__btn {
+    width: 15rem;
+    max-width: 250px;
+    height: 4rem;
+    border-radius: 15%;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .resenas {
+    font-size: 1.7rem;
+    padding: 11rem 16rem;
+  }
+}
+@media screen and (min-width: 2150px) {
+  .resenas {
+    font-size: 1.8rem;
+    padding: 12rem 16.5rem;
+  }
+}
+@media screen and (min-width: 2300px) {
+  .resenas {
+    font-size: 2rem;
+    padding: 12rem 17rem;
+  }
+}
